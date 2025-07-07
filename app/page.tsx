@@ -1,8 +1,11 @@
-import Image from "next/image";
+import Navbar from "./components/navbar"
+import Hero from "./components/hero"
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-         <h1>NEXT JS HOSPITAL WEB APP</h1> </div>
-  );
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Hero />
+    </div>
+  )
 }
